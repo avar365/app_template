@@ -24,12 +24,28 @@ cd app_template
 Make sure you have the **Remote - Containers** extension installed in VSCode.  
 Open the folder and click **"Reopen in Container"** when prompted.
 
+### 3. Install dependencies (locally or in container)
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Run the App
+
+```bash
+streamlit run src/my_project/main.py
+```
+
+---
+
 ## Project Structure
 
 ```
 .
 ├── src/
-│   └── app/
+│   └── my_project/
 │       ├── main.py           # Streamlit entrypoint
 │       ├── db.py             # DB connection / logic
 │       ├── file_handler.py   # File upload/delete logic

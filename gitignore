@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# VSCode settings
+.vscode/
+
+# Python distribution files
+build/
+dist/
+*.egg-info/
+
+# SQLite database and local file storage (your persistent volume)
+*.sqlite3
+*.db
+data/
+uploads/
+
+# Environment variables
+.env
+.env.*
+
+# Logs
+*.log
+
+# Misc
+.DS_Store

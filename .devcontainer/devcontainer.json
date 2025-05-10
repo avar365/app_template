@@ -1,0 +1,20 @@
+{
+  "name": "Python 3.11",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "containerEnv": {
+    "STREAMLIT_DISABLE_WELCOME_MESSAGE": "true"
+  },
+  "postCreateCommand": "poetry install && mkdir -p uploads data && poetry run streamlit run src/app/main.py --server.address=0.0.0.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-azuretools.vscode-docker"
+      ]
+    }
+  },
+  "forwardPorts": [8501]
+}
